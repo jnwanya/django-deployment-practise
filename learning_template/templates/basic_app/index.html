@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+
+  {% extends "basic_app/base.html" %}
+    {% block body_block %}
+      {% load my_extras %}
+      <h1>WELCOME TO INDEX PAGE</h1>
+      <h2>Name: {{name | replacer:'u' }}</h2>
+      <h2>Age : {{age|add:3 }}</h2>
+    {% endblock %}
